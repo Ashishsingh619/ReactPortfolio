@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+#NavBar{
+    display: flex;
+    background-color: white;
+    height: 3.6rem;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    z-index: 4;
+}
+
+nav{
+     display: flex;
+     width: 100%;
+     max-width: 70rem;
+     justify-content: space-between;
+
+}
+
+.profile{
+    display: flex;
+    align-items:center;
+}
+.profile img{
+    object-fit: cover;
+    height: 2.3rem;
+    width:2.3rem;
+    border-radius: 50%;
+}
+
+.profileName{
+    margin:0;
+    padding:0.5rem;
+}
+
+.navItemsContainer{
+    display: flex;
+    align-items: center;
+}
+
+.navItems{
+    padding: 1rem;
+}
+
+.navItemsContainer p:hover{
+    color: #64CCC5;
+    
+    border-bottom: 2px solid #64CCC5;
+}
+
