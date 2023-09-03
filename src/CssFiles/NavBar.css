@@ -8,17 +8,22 @@
     justify-content: center;
     font-weight: bold;
     font-size: 1.1rem;
-    z-index: 4;
+    z-index: 10;
 }
 
-nav{
+.normalLayout, .mobileLayout{
      display: flex;
      width: 100%;
      max-width: 70rem;
      justify-content: space-between;
+     margin-left: 0.4rem;
+     margin-right: 0.4rem;
+     
 
 }
-
+.mobileLayout{
+    display: none;
+}
 .profile{
     display: flex;
     align-items:center;
@@ -50,3 +55,47 @@ nav{
     border-bottom: 2px solid #64CCC5;
 }
 
+.dropDownItemContainer{
+    display: none;
+}
+
+@media (max-width: 543px ){
+   
+    .mobileLayout{
+        display: flex;
+    }
+
+    .normalLayout{
+        display: none;
+    }
+
+    #NavBar{
+        font-size: 0.9rem;
+       
+    }
+   
+    .profile img{
+        height: 2.0rem;
+        width:2.0rem;
+        border-radius: 50%;
+    }
+
+    .dropDownItemContainer{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        z-index: 10;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 100;
+    }
+
+    .dropDownItems{
+        border: 0.5px solid rgb(238, 236, 236);
+        border-bottom: 0;
+        padding-left: 0.4rem;
+        
+    }
+    .dropDownItems:hover{
+        color: #64CCC5;
+    }
+}
