@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+#home{
+    margin-top: 3.5rem;
+    height: calc(100vh - 3.5rem);
+    background-color: #fcfbf4;
+    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+    font-family: "Poppins", sans-serif;
+}
+
+.homeContent{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.homeName,.helloIntro{
+    font-size: 3.2rem;
+    font-weight: bold;
+    color: #111;
+  
+}
+.homeImage img{
+    object-fit: cover;
+    height: 18rem;
+    width:18rem;
+    border-radius: 50%;
+}
+
+.homeName span{
+    color: #FF9B50;
+}
+.homeRole{
+    
+     font-size: 1.6rem;
+     font-weight: 600;
+}
+.homeRole span{
+    color: #E25E3E;
+}
+
+.homeButtons{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 2.8rem;
+    
+}
+
+.aboutMeBtn, .ResumeBtn{
+    background-color: #64ccc5;
+    padding: 0.6rem;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.aboutMeBtnItems{
+    display: flex;
+    align-items: center;
+    gap:0.3rem;
+}
+.aboutMeBtn img{
+    padding: 0;
+    margin: 0;
+}

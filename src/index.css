@@ -1,8 +1,4 @@
-body {
+*{
   margin: 0;
-  background-color: #FCFBF4;
-background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-
-
+  padding: 0;
 }
-

@@ -1,101 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
-#NavBar{
+#NavBar {
+  display: flex;
+  background-color: white;
+  height: 3.5rem;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  color: #333;
+  z-index: 4;
+  width: 100%;
+}
+
+.normalLayout,
+.mobileLayout {
+  display: flex;
+  width: 100%;
+  max-width: 70rem;
+  justify-content: space-between;
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+  align-self: center;
+  align-items: center;
+}
+.mobileLayout {
+  display: none;
+}
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  object-fit: cover;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+}
+
+.profileName {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.navItemsContainer {
+  display: flex;
+  align-items: center;
+  height: 3.5rem;
+}
+
+.navItems {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.navItemsContainer p:hover {
+  color: #64ccc5;
+
+  border-bottom: 2px solid #64ccc5;
+}
+
+.dropDownItemContainer {
+  display: none;
+}
+
+@media (max-width: 570px) {
+  .mobileLayout {
     display: flex;
-    background-color: white;
-    height: 3.6rem;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.1rem;
-    z-index: 10;
-}
+  }
 
-.normalLayout, .mobileLayout{
-     display: flex;
-     width: 100%;
-     max-width: 70rem;
-     justify-content: space-between;
-     margin-left: 0.4rem;
-     margin-right: 0.4rem;
-     
-
-}
-.mobileLayout{
+  .normalLayout {
     display: none;
-}
-.profile{
-    display: flex;
-    align-items:center;
-}
-.profile img{
-    object-fit: cover;
-    height: 2.3rem;
-    width:2.3rem;
+  }
+
+  #NavBar {
+    font-size: 0.9rem;
+  }
+
+  .profile img {
+    height: 2rem;
+    width: 2rem;
     border-radius: 50%;
-}
+  }
 
-.profileName{
-    margin:0;
-    padding:0.5rem;
-}
+  .dropDownItemContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    z-index: 4;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    top:3.5rem;
+  }
 
-.navItemsContainer{
+  .dropDownItems {
+    border: 0.5px solid rgb(238, 236, 236);
+    border-bottom: 0;
+    padding-left: 0.4rem;
+    cursor: pointer;
+    height: 3.5rem;
     display: flex;
     align-items: center;
-}
+  }
 
-.navItems{
-    padding: 1rem;
-}
-
-.navItemsContainer p:hover{
-    color: #64CCC5;
-    
-    border-bottom: 2px solid #64CCC5;
-}
-
-.dropDownItemContainer{
-    display: none;
-}
-
-@media (max-width: 543px ){
-   
-    .mobileLayout{
-        display: flex;
-    }
-
-    .normalLayout{
-        display: none;
-    }
-
-    #NavBar{
-        font-size: 0.9rem;
-       
-    }
-   
-    .profile img{
-        height: 2.0rem;
-        width:2.0rem;
-        border-radius: 50%;
-    }
-
-    .dropDownItemContainer{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        z-index: 10;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 100;
-    }
-
-    .dropDownItems{
-        border: 0.5px solid rgb(238, 236, 236);
-        border-bottom: 0;
-        padding-left: 0.4rem;
-        
-    }
-    .dropDownItems:hover{
-        color: #64CCC5;
-    }
+  .dropDownItems:hover {
+    color: #64ccc5;
+  }
 }
