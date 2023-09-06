@@ -67,7 +67,7 @@
   display: none;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 615px) {
   .mobileLayout {
     display: flex;
   }
@@ -77,7 +77,7 @@
   }
 
   #NavBar {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .profile img {
