@@ -2,6 +2,8 @@ import React from "react";
 import "../CssFiles/Home.css";
 import selfImage from "../Images/SelfImage.jpg";
 import Typed from "typed.js";
+import resume from "../Resume/roadmap-2.pdf";
+import {motion} from "framer-motion";
 
 function Home() {
   const el = React.useRef(null);
@@ -16,6 +18,7 @@ function Home() {
       typed.destroy();
     };
   }, []);
+  
   return (
     <>
       <section id="home">
@@ -30,8 +33,8 @@ function Home() {
             </p>
             <div className="homeButtons">
               <button className="aboutMeBtn">
-                <div className="aboutMeBtnItems">
-                    <p>Download Resume</p>
+                <div className="aboutMeBtnItems" >
+                    <p><a href={resume} target="_blank" >Download Resume</a></p>
                     <img width="25" height="25" src="https://img.icons8.com/sf-regular-filled/48/FFFFFF/downloading-updates.png" alt="downloading-updates"/>
                     
                 </div>
@@ -39,9 +42,9 @@ function Home() {
               <button className="ResumeBtn">About Me</button>
             </div>
           </div>
-          <div className="homeImage">
+          <motion.div animate={{scale:1}} transition={{delay:0.1}} initial={{scale:0}} className="homeImage">
             <img src={selfImage} alt="Image of myself" />
-          </div>
+          </motion.div>
         </div>
       </section>
     </>
