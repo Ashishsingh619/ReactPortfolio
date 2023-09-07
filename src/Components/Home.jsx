@@ -22,16 +22,16 @@ function Home() {
   return (
     <>
       <section id="home">
-        <div className="homeContent">
+        <motion.div className="homeContent">
           <div className="homeDetails">
-            <p className="helloIntro">Hello,</p>
-            <p className="homeName">
+            <motion.p animate={{y:0}} transition={{type:"tween", duration:1}} initial={{y:-100} } className="helloIntro">Hello,</motion.p>
+            <motion.p  animate={{x:0,opacity:1}} transition={{type:"tween", duration:1}} initial={{x:-100,opacity:0}} className="homeName">
               I'm <span>Ashish Singh</span>
-            </p>
-            <p className="homeRole">
+            </motion.p>
+            <motion.p animate={{y:0}} transition={{type:"tween", duration:1}} initial={{y:100}}  className="homeRole">
               I am a <span ref={el} />
-            </p>
-            <div className="homeButtons">
+            </motion.p>
+            <motion.div animate={{y:0}} transition={{type:"tween", duration:1}} initial={{y:100}}  className="homeButtons">
               <button className="aboutMeBtn">
                 <div className="aboutMeBtnItems" >
                     <p><a href={resume} target="_blank" >Download Resume</a></p>
@@ -40,12 +40,12 @@ function Home() {
                 </div>
               </button>
               <button className="ResumeBtn">About Me</button>
-            </div>
+            </motion.div>
           </div>
-          <motion.div animate={{scale:1}} transition={{delay:0.1}} initial={{scale:0}} className="homeImage">
+          <motion.div animate={{scale:1}} transition={{ delay:1 ,type:"tween", duration:1}} initial={{scale:0}}  className="homeImage">
             <img src={selfImage} alt="Image of myself" />
           </motion.div>
-        </div>
+        </motion.div>
       </section>
     </>
   );
