@@ -1,7 +1,14 @@
 import React from "react";
 import "../CssFiles/About.css"
+import skills from "../Json Data/Skills"
 
 function About(){
+
+    function handleSkills(items){
+        return (
+            <button className="aboutMeSkillItem">{items}</button>
+        );
+    }
 
     return (<>
     <section id="about">
@@ -17,7 +24,8 @@ function About(){
                 <div className="aboutMeSkills">
                     <p className="aboutMeSkillsHeading">My Skills</p>
                     <div className="aboutMeSkillsItems">
-                        <button className="aboutMeSkillItem">Html</button>
+                        {skills.map(handleSkills)}
+                        
                     </div>
                 </div>
             </div>
