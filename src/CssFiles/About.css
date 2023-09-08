@@ -8,7 +8,7 @@
 }
 
 .aboutDetails{
-    margin-top: 3rem;
+    margin-top: 0.3rem;
     width: 100%;
     max-width: 70rem;
     display: flex;
@@ -17,8 +17,10 @@
 }
 
 .aboutMeHeading{
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: bold;
+    padding-bottom: 0;
+    
 }
 
 .aboutLineBreak button{
@@ -27,8 +29,36 @@
      width: 3.6rem;
      height: 0.3rem;
      border: none;
+     cursor: none;
 }
 
 .aboutMeDescription{
     font-size: 1.3rem;
+}
+
+.aboutMeSkillDescription{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.6rem;
+}
+.aboutDescription ,.aboutMeSkills{
+    width: 50%;
+    font-size: 1.1rem;
+    max-width: 40%;
+    text-align: justify;
+}
+
+.aboutDescriptionHeading,.aboutMeSkillsHeading{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.aboutMeSkillItem{
+    padding: 0.6rem;
+    border: none;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+    font-weight: normal;
 }
