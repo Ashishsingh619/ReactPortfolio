@@ -20,6 +20,7 @@ function About(){
                 <div className="aboutDescription">
                     <p className="aboutDescriptionHeading">Get to know me!</p>
                     <p className="aboutDescriptionBody">Hello, I am a Software Developer. I am dedicated in the quest of developing solutions that leverage on best practice technologies to deliver over the top user experience. I have a accomplishment history that spans for approximately 2 years in different areas of computing sphere mainly focused on android app development and full stack web development.</p>
+                    <button className="aboutSectionContactMeBtn">Contact me</button>
                 </div>
                 <div className="aboutMeSkills">
                     <p className="aboutMeSkillsHeading">My Skills</p>

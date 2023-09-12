@@ -33,6 +33,9 @@ function NavBar() {
               <p>Projects</p>
             </Link>
             <Link className="navItems">
+              <p>Experience</p>
+            </Link>
+            <Link className="navItems">
               <p>Contact</p>
             </Link>
           </div>
@@ -65,6 +68,9 @@ function NavBar() {
         </Link>
         <Link className="dropDownItems">
           <p>Projects</p>
+        </Link>
+        <Link className="dropDownItems">
+          <p>Experience</p>
         </Link>
         <Link className="dropDownItems">
           <p>Contact</p>

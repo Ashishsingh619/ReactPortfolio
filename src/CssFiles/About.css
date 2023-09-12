@@ -17,7 +17,7 @@
 }
 
 .aboutMeHeading{
-    font-size: 3rem;
+    font-size: 2.1rem;
     font-weight: bold;
     padding-bottom: 0;
     
@@ -29,7 +29,7 @@
      width: 3.6rem;
      height: 0.3rem;
      border: none;
-     cursor: none;
+     cursor: text;
 }
 
 .aboutMeDescription{
@@ -39,6 +39,7 @@
 .aboutMeSkillDescription{
     display: flex;
     justify-content: space-around;
+    word-spacing:-0.1rem;
     padding-top: 0.6rem;
 }
 .aboutDescription ,.aboutMeSkills{
@@ -61,10 +62,32 @@
     font-size: 1rem;
     border-radius: 0.2rem;
     font-weight: 100;
+    cursor: text;
+   background-color: #e1e2e3;
 }
 
 .aboutMeSkillsItems{
     display: flex;
     flex-wrap: wrap;
     gap:0.5rem;
+   
 }
+
+.aboutSectionContactMeBtn{
+  margin-top: 1rem;
+  background-color: #64ccc5;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.aboutSectionContactMeBtn:hover{
+    background-color: transparent;
+    border:2px solid #64ccc5;
+    color: #000;
+  }
+  
