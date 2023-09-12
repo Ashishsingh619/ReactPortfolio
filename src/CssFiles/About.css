@@ -90,4 +90,35 @@
     border:2px solid #64ccc5;
     color: #000;
   }
+
   
+  @media (max-width: 960px){
+    .aboutMeHeading{
+        font-size: 1.9rem;
+    }
+    .aboutLineBreak button{
+        width: 3.0rem;
+        height: 0.2rem;
+   }
+
+   .aboutMeDescription{
+    font-size: 1.2rem;
+    }
+
+    .aboutDescriptionHeading,.aboutMeSkillsHeading{
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+
+    .aboutMeSkillItem{
+        padding: 0.5rem;
+        border: none;
+        font-size: 1rem;
+    }
+    .aboutDescriptionBody{
+        font-size: 1rem
+    }
+  
+  }
