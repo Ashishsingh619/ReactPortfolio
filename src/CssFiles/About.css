@@ -92,7 +92,7 @@
   }
 
   
-  @media (max-width: 960px){
+  @media (max-width: 960px) and (min-width: 650px) {
     .aboutMeHeading{
         font-size: 1.9rem;
     }
@@ -121,4 +121,63 @@
         font-size: 1rem
     }
   
+  }
+
+  @media (max-width: 650px){
+
+    .aboutMeSkillDescription{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        word-spacing:-0.1rem;
+        padding-top: 0rem;
+    }
+
+    .aboutDescription ,.aboutMeSkills{
+        width: 100%;
+        font-size: 0.8rem;
+        max-width: 90%;
+        text-align: justify;
+    }
+
+    .aboutMeHeading{
+        font-size: 1.4rem;
+    }
+    .aboutLineBreak button{
+        width: 3.0rem;
+        height: 0.2rem;
+   }
+
+   .aboutMeDescription{
+    font-size: 0.9rem;
+    }
+
+    .aboutDescriptionHeading,.aboutMeSkillsHeading{
+        /* padding-top: 0.5rem; */
+        margin-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    .aboutMeSkillItem{
+        padding: 0.3rem;
+        border: none;
+        font-size: 0.9rem;
+    }
+    .aboutDescriptionBody{
+        font-size: 0.8rem
+    }
+  
+    .aboutSectionContactMeBtn{
+        margin-top: 0.4rem;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        
+      }
+      
+      .aboutSectionContactMeBtn:hover{
+        border:1.5px solid #64ccc5;
+      }
+    
   }
